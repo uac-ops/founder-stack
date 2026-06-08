@@ -1,0 +1,21 @@
+{
+  "name": "founder-stack",
+  "version": "0.1.0",
+  "description": "The operating system for a one-person company. Interlinked Claude Code skills, agents, and commands that take a solo founder from raw idea to a deployed, marketed, supported product — all coordinated through a single shared COMPANY.md ledger.",
+  "author": {
+    "name": "uac-ops",
+    "url": "https://github.com/uac-ops"
+  },
+  "homepage": "https://github.com/uac-ops/founder-stack",
+  "repository": "https://github.com/uac-ops/founder-stack",
+  "license": "MIT",
+  "keywords": [
+    "solo-founder",
+    "one-person-company",
+    "startup",
+    "claude-code",
+    "agents",
+    "skills",
+    "zero-to-production"
+  ]
+}

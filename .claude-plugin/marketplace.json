@@ -1,0 +1,14 @@
+{
+  "name": "founder-stack",
+  "owner": {
+    "name": "uac-ops",
+    "url": "https://github.com/uac-ops"
+  },
+  "plugins": [
+    {
+      "name": "founder-stack",
+      "source": "./",
+      "description": "Run a one-person company from idea to production: 17 interlinked lifecycle skills, 13 specialist agents, and orchestration commands coordinated through a shared COMPANY.md ledger."
+    }
+  ]
+}

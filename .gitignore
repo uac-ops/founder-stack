@@ -1,0 +1,29 @@
+# Founder Stack — keep the framework clean of project-specific output.
+
+# The live ledger belongs to the founder's own project, not this repo.
+# (templates/COMPANY.md is the tracked template; a real COMPANY.md is not.)
+/COMPANY.md
+.founder/
+
+# Local Claude Code settings (machine-specific, not part of the plugin)
+.claude/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# Logs and scratch
+*.log
+/tmp/
+/scratch/
+
+# Secrets — never commit these
+.env
+.env.*
+*.pem
+*.key
+secrets/
