@@ -1,5 +1,8 @@
 # Founder Stack
 
+[![validate](https://github.com/uac-ops/founder-stack/actions/workflows/validate.yml/badge.svg)](https://github.com/uac-ops/founder-stack/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 **The operating system for a one-person company.**
 
 Founder Stack is a [Claude Code](https://docs.claude.com/en/docs/claude-code) plugin that turns your terminal into a full company. It gives a solo founder a complete, interlinked set of **skills**, **specialist agents**, and **orchestration commands** that carry a project from a raw idea all the way to a deployed, marketed, and supported product.
@@ -56,6 +59,13 @@ files under [`skills/`](skills/) and follow them by hand.
 From there, `/company` walks you stage by stage. Or jump straight to any skill,
 for example `ideate`, `validate`, `market`, or `sell`.
 
+## See it in action
+
+Want to know what this looks like once a company is fully built? Read
+[`examples/COMPANY.md`](examples/COMPANY.md) — a complete, filled-in ledger for a
+fictional company (ShipDigest) that has run the whole lifecycle to `operate`. It
+is the fastest way to understand how the pieces connect.
+
 ---
 
 ## The lifecycle
@@ -75,10 +85,21 @@ for example `ideate`, `validate`, `market`, or `sell`.
 | 11 | Market | `market` | Positioning, content, SEO, channels |
 | 12 | Sell | `sell` | Pricing, funnel, outreach, conversion |
 | 13 | Support | `support` | Support channels, FAQ, issue triage |
-| 14 | Finance | `finance` | Runway, MRR, pricing economics |
-| 15 | Legal | `legal` | Entity, ToS/Privacy, IP, compliance |
-| 16 | Operate | `operate` | North-star metrics, dashboards, automations |
-| 0 | Orchestrate | `orchestrator` | The conductor that ties them all together |
+| 14 | Operate | `operate` | North-star metrics, dashboards, automations |
+
+The 14 stages above run roughly in order. Two more are **cross-cutting** — run
+them whenever money or risk enters the picture, not at a fixed step:
+
+| # | Stage | Skill | What it does | When |
+|---|-------|-------|--------------|------|
+| ✦ | Finance | `finance` | Runway, MRR, pricing economics | After validate, then monthly |
+| ✦ | Legal | `legal` | Entity, ToS/Privacy, IP, compliance | Before launch |
+
+And one conductor that ties it all together:
+
+| # | Stage | Skill | What it does |
+|---|-------|-------|--------------|
+| 0 | Orchestrate | `orchestrator` | Reads your stage and runs the right skill |
 
 See [`docs/WORKFLOW.md`](docs/WORKFLOW.md) for the full map and handoffs.
 
@@ -111,10 +132,13 @@ Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the design, and
 ```
 founder-stack/
 ├── .claude-plugin/      plugin + marketplace manifests
+├── .github/             issue/PR templates + CI workflow
 ├── commands/            slash-command entry points
 ├── skills/              17 lifecycle skills (each a SKILL.md playbook)
 ├── agents/              13 specialist subagents
 ├── templates/           COMPANY.md ledger + artifact templates
+├── examples/            a fully worked COMPANY.md
+├── scripts/             validate.sh (structure + frontmatter check)
 └── docs/                WORKFLOW · ARCHITECTURE · LEDGER · GETTING-STARTED
 ```
 

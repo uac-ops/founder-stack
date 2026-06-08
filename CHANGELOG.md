@@ -6,6 +6,26 @@ All notable changes to Founder Stack are documented here. Format follows
 
 ## [Unreleased]
 
+## [0.1.1] — 2026-06-08
+
+### Fixed
+- `/new-company` now resolves the ledger template via `${CLAUDE_PLUGIN_ROOT}`, so
+  it works when installed as a plugin (previously used a path that only resolved
+  in a clone).
+- Lifecycle numbering is consistent: 14 linear stages with `finance` and `legal`
+  marked cross-cutting. Fixed the README table and the `/status` "step N of 14".
+
+### Added
+- Worked example: `examples/COMPANY.md` (a complete filled-in ledger) + README.
+- Community files: `SECURITY.md`, `CODE_OF_CONDUCT.md`, issue templates, and a
+  pull request template.
+- CI: `scripts/validate.sh` and a GitHub Actions workflow that validate skill,
+  agent, and command frontmatter, name/folder matching, and the plugin JSON.
+- `.gitattributes` to normalize line endings across platforms.
+- Analytics + error tracking are now an explicit part of the `deploy` stage.
+- The orchestrator now guards the cross-cutting stages (blocks `launch` until
+  `legal` is done; nudges `finance` after validate and monthly).
+
 ## [0.1.0] — 2026-06-08
 
 ### Added

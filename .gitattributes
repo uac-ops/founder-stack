@@ -1,0 +1,17 @@
+# Normalize line endings so contributors on different OSes get clean diffs.
+* text=auto eol=lf
+
+# Explicitly text
+*.md    text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.sh    text eol=lf
+*.txt   text eol=lf
+LICENSE text eol=lf
+
+# Treat common binaries as binary (in case examples add assets later)
+*.png   binary
+*.jpg   binary
+*.gif   binary
+*.pdf   binary

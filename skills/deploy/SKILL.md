@@ -29,8 +29,11 @@ A live production URL, a one-command (or auto) deploy, and a tested rollback.
    in env vars, secrets in the platform's secret store.
 3. **CI/CD.** On push to main: run tests, build, deploy. Block deploys on red
    tests. Keep it simple and fast.
-4. **Health checks.** A health endpoint and an uptime check. Know within minutes
-   if prod is down.
+4. **Health checks + analytics.** A health endpoint and an uptime check so you
+   know within minutes if prod is down. Also wire up **product analytics** now
+   (a privacy-respecting tool is fine) and confirm events fire — `launch`,
+   `market`, and `operate` all depend on this data existing, so it must be live
+   before you go public. Add error tracking too.
 5. **Rollback plan.** One command or one click to revert to the last good
    release. Test it before you need it.
 6. **First deploy + smoke test.** Deploy, then walk the critical flow on the live
@@ -41,6 +44,7 @@ A live production URL, a one-command (or auto) deploy, and a tested rollback.
 - Live production URL with HTTPS.
 - Automated deploy on push; red tests block it.
 - Health check live; rollback tested.
+- Product analytics + error tracking live and verified.
 
 ## Update the ledger
 - Fill `## 08 Deploy` (hosting/infra, CI/CD, environments, rollback plan).

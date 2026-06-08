@@ -46,10 +46,16 @@ ceremony from the founder.
 5. **Report the handoff.** When the stage skill finishes, read the new `Stage`
    and tell the founder what running `/company` again will do next.
 
-## Cross-cutting stages
-`finance` and `legal` are not in the linear order. Proactively suggest:
-- `finance` right after `validate`, and monthly thereafter.
-- `legal` before `launch`.
+## Cross-cutting stages — guard them, don't just suggest
+`finance` and `legal` are not in the linear order, so they are easy to skip.
+Enforce them:
+- **Before running `launch`:** check `## 15 Legal`. If ToS/Privacy aren't marked
+  live, STOP and run `legal` first. Launching publicly without it is a real risk.
+- **After `validate` (entering `plan`):** if `## 14 Finance` is empty, run
+  `finance` to sketch unit economics before committing to build.
+- **In `operate`:** if `## 14 Finance` hasn't been updated in ~30 days, prompt a
+  `finance` refresh.
+- Otherwise, suggest them whenever money or legal risk enters the conversation.
 
 ## Exit criteria
 The matched stage skill has run and the ledger reflects its output.

@@ -10,12 +10,13 @@ The founder wants a snapshot of their company.
 
 ```
 COMPANY: <name> — <one-liner>
-STAGE:   <current stage>  (step N of 16)
+STAGE:   <current stage>  (step N of 14)
 URL:     <production URL or —>
 
-PROGRESS
+PROGRESS  (the 14 linear stages, ideate → operate)
   ✅ done stages        ▶️ current stage        ⬜ remaining stages
-  (mark each lifecycle stage based on whether its ledger section is filled)
+  (mark each of the 14 linear stages based on whether its ledger section is
+   filled; finance and legal are cross-cutting and shown separately below)
 
 KEY NUMBERS
   MRR / revenue:  <from ## 14 Finance, or —>
