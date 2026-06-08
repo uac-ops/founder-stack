@@ -51,5 +51,7 @@ the MVP, captured so the `build` stage can implement without guessing.
 - Next Actions: "Run `build` to implement the MVP."
 
 ## Handoff
-"Design is set. Next run `build` to implement the MVP against this design system,
+"Design is set. Before committing build time, consider `prototype` to test the
+riskiest design assumption with users cheaply — and `onboarding` to design the
+first-run path. Then run `build` to implement the MVP against this design system,
 with tests and atomic commits."

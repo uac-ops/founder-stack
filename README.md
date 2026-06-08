@@ -17,8 +17,8 @@ Every part is connected through one shared file — `COMPANY.md`, your company l
 
 A solo founder wears every hat: product, design, engineering, security, ops, marketing, sales, support, finance, legal. Most tools cover one slice. Founder Stack covers the whole company and — critically — **wires the slices together** so nothing falls through the cracks.
 
-- **17 lifecycle skills** — one per stage, from `ideate` to `operate`.
-- **13 specialist agents** — a researcher, architect, builder, closer, and more, each dispatchable for focused work.
+- **25 skills** — the 14-stage lifecycle (`ideate` → `operate`), 8 cross-cutting quality skills (prototype, code-review, accessibility, performance, onboarding, polish, research, experiment), plus the orchestrator.
+- **20 specialist agents** — a researcher, architect, builder, reviewer, designer, closer, and more, each dispatchable for focused work.
 - **4 orchestration commands** — `/new-company`, `/company`, `/next`, `/status`.
 - **1 shared ledger** — `COMPANY.md` keeps every stage in sync.
 
@@ -103,6 +103,23 @@ And one conductor that ties it all together:
 
 See [`docs/WORKFLOW.md`](docs/WORKFLOW.md) for the full map and handoffs.
 
+## Quality & Discovery skills
+
+These don't sit at a fixed step — they make the **product itself better** and run
+whenever they're relevant. Each writes to the `Quality & Discovery` block of your
+ledger.
+
+| Skill | What it does | Run it… |
+|-------|--------------|---------|
+| `prototype` | Test the design with users before building it | After design, before build |
+| `code-review` | Catch bugs/security/simplification in the diff | After build, before test |
+| `accessibility` | WCAG 2.2 AA — keyboard, screen reader, contrast | Before launch |
+| `performance` | Core Web Vitals, bundle, queries, latency | Before launch + in operate |
+| `onboarding` | Engineer the path to the "aha moment" | Design/build + refine in operate |
+| `polish` | Visual consistency, microcopy, every state | Before launch + in operate |
+| `research` | Continuous customer discovery (JTBD) | Continuously |
+| `experiment` | A/B tests + metric-driven iteration | In operate |
+
 ---
 
 ## How it all connects
@@ -115,7 +132,7 @@ See [`docs/WORKFLOW.md`](docs/WORKFLOW.md) for the full map and handoffs.
                              │ read / write
         ┌────────────────────┼────────────────────┐
         ▼                    ▼                     ▼
-   /company            17 skills             13 agents
+   /company            25 skills             20 agents
   (orchestrator)   ideate → operate     researcher, architect,
    reads Stage,    each reads inputs,    builder, closer, ...
    runs next       writes outputs,       dispatched by skills
@@ -134,8 +151,8 @@ founder-stack/
 ├── .claude-plugin/      plugin + marketplace manifests
 ├── .github/             issue/PR templates + CI workflow
 ├── commands/            slash-command entry points
-├── skills/              17 lifecycle skills (each a SKILL.md playbook)
-├── agents/              13 specialist subagents
+├── skills/              25 skills: 14-stage lifecycle + 8 quality + orchestrator
+├── agents/              20 specialist subagents
 ├── templates/           COMPANY.md ledger + artifact templates
 ├── examples/            a fully worked COMPANY.md
 ├── scripts/             validate.sh (structure + frontmatter check)

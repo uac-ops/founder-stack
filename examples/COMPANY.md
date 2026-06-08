@@ -156,6 +156,46 @@
 
 ---
 
+## Q · Quality & Discovery
+
+### Research        <!-- skill: research -->
+Monthly: 4 user interviews. Latest finding — users distrust the draft until they
+see it match their *voice*, so we added a one-time tone calibration. JTBD: "make
+me look consistent without the weekly chore."
+
+### Prototype       <!-- skill: prototype -->
+Pre-build clickable Figma of the connect→preview flow tested with 5 devs. 3 of 5
+missed the "edit before send" affordance → moved Edit to a primary button before
+building.
+
+### Code Review     <!-- skill: code-review -->
+Gate on every PR (solo, but reviewed via the code-review skill). Caught an
+unescaped repo description flowing into the email HTML (XSS) before it shipped.
+
+### Accessibility   <!-- skill: accessibility -->
+WCAG 2.2 AA on connect + preview + settings. Keyboard + VoiceOver pass; fixed
+unlabeled icon buttons and low-contrast secondary text. No blockers open.
+
+### Performance     <!-- skill: performance -->
+Baseline LCP 3.1s → 1.8s after image compression + code-split of the editor.
+Digest cron p95 4.2s → 1.1s after fixing an N+1 on commit fetch. Budget: LCP <2.5s.
+
+### Onboarding      <!-- skill: onboarding -->
+Aha = "previewed your first digest." Cut signup→aha from 6 steps to 3 with GitHub
+one-click + a sample digest on empty state. Activation = preview within 10 min of
+signup (currently 61%).
+
+### Polish          <!-- skill: polish -->
+Pre-launch pass: unified spacing scale, added loading/empty/error states to the
+digest list, rewrote 12 microcopy strings, removed the generic gradient hero for
+a real sample-digest screenshot.
+
+### Experiments     <!-- skill: experiment -->
+A/B: "Send test to myself" button on preview. Hypothesis: lowers send anxiety,
+raises free→paid. Result: +3.1pp free→paid (p<0.05, 2-week run) → shipped.
+
+---
+
 ## Decision Log
 - 2026-01-12 · Started the company · ran /new-company
 - 2026-01-15 · ideate · riskiest assumption = devs will send auto-drafted updates

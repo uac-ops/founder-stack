@@ -124,6 +124,20 @@
 
 ---
 
+## Q · Quality & Discovery
+<!-- Cross-cutting quality skills. Run when relevant, not at a fixed step. -->
+
+### Research        <!-- skill: research -->
+### Prototype       <!-- skill: prototype -->
+### Code Review     <!-- skill: code-review -->
+### Accessibility   <!-- skill: accessibility -->
+### Performance     <!-- skill: performance -->
+### Onboarding      <!-- skill: onboarding -->
+### Polish          <!-- skill: polish -->
+### Experiments     <!-- skill: experiment -->
+
+---
+
 ## Decision Log
 <!-- Append-only. One line per decision. Date · what · why. -->
 - _YYYY-MM-DD · Started the company · ran /new-company_

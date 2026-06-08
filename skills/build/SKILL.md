@@ -53,4 +53,6 @@ tests for the critical paths.
 - Next Actions: "Run `test` to QA the critical flows and get a health score."
 
 ## Handoff
-"MVP is functional. Next run `test` to prove it works before we secure and ship."
+"MVP is functional. Run `code-review` on the diff before `test` to catch defects
+early. Then `test` to prove it works. Run `accessibility` and `performance`
+passes before launch so the product is usable and fast for everyone."

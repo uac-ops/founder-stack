@@ -54,4 +54,5 @@ A clear go / pivot / kill decision backed by evidence, not hope.
 
 ## Handoff
 On go: "Demand is real. Run `plan` to scope the smallest winning MVP — and
-consider `finance` now." On pivot: "Back to `ideate` with what we learned."
+consider `finance` now. Validation was a one-time gate; keep learning with the
+`research` skill as you build." On pivot: "Back to `ideate` with what we learned."

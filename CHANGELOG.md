@@ -6,6 +6,29 @@ All notable changes to Founder Stack are documented here. Format follows
 
 ## [Unreleased]
 
+## [0.1.2] — 2026-06-08
+
+### Added
+- **8 quality skills** (cross-cutting, not on the linear Stage machine):
+  `prototype`, `code-review`, `accessibility`, `performance`, `onboarding`,
+  `polish`, `research`, `experiment`. They write to a new `## Q · Quality &
+  Discovery` block in the ledger.
+- **7 specialist agents**: `code-reviewer`, `accessibility-specialist`,
+  `performance-engineer`, `ux-designer`, `copywriter`, `ux-researcher`,
+  `data-analyst`.
+- Quality & Discovery block added to the `COMPANY.md` template and the worked
+  example.
+
+### Changed
+- Stages now suggest the relevant quality skills: `design`→`prototype`/
+  `onboarding`, `build`→`code-review`/`accessibility`/`performance`,
+  `validate`→`research`, and the `operate` loop pulls in `research`/`experiment`.
+- `launch` pre-flight gate now requires the `accessibility`, `performance`, and
+  `polish` passes.
+- Orchestrator documents and suggests the quality skills at the right moments.
+- Totals are now 25 skills and 20 agents (README, WORKFLOW, ARCHITECTURE,
+  marketplace updated).
+
 ## [0.1.1] — 2026-06-08
 
 ### Fixed

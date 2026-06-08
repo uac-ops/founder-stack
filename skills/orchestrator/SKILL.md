@@ -57,6 +57,18 @@ Enforce them:
   `finance` refresh.
 - Otherwise, suggest them whenever money or legal risk enters the conversation.
 
+## Quality & Discovery skills
+These are not linear stages either — they make the product *better*. Suggest them
+at the natural moment:
+- After `design`, before `build`: `prototype` (test the design), `onboarding`
+  (design the aha moment).
+- After `build`, before `test`: `code-review` (catch defects in the diff).
+- Before `launch`: `accessibility`, `performance`, and `polish` passes.
+- During `operate`: `research` (continuous discovery) and `experiment` (act on
+  analytics), plus `polish` on rough surfaces.
+They write to the `## Q · Quality & Discovery` block in the ledger. A founder can
+run any of them on demand at any time.
+
 ## Exit criteria
 The matched stage skill has run and the ledger reflects its output.
 

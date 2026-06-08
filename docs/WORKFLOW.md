@@ -88,6 +88,39 @@ routines. The steady state. Dispatches `finance-clerk`, `growth-marketer`.
 ### 0. orchestrator — *the conductor*
 Reads `Stage` and runs the right thing. You usually start here via `/company`.
 
+## Quality & Discovery skills (cross-cutting)
+
+These don't have a slot in the linear `Stage` machine. Like `finance` and
+`legal`, you run them when they're relevant — and they're what turn a working
+product into a *good* one. They write to the `## Q · Quality & Discovery` block
+of the ledger.
+
+```
+design ─►[ prototype ]─► build ─►[ code-review ]─► test ─► ... ─► launch
+                                                                    ▲
+                       before launch: [ accessibility ][ performance ][ polish ]
+
+           continuous: [ research ] feeds plan   ·   [ experiment ] feeds build
+           product surface: [ onboarding ] designs the path to first value
+```
+
+- **prototype** — test the riskiest design assumption with users before building.
+  Dispatches `ux-designer`. (after `design`, before `build`)
+- **code-review** — review the diff for bugs, security, and simplification.
+  Dispatches `code-reviewer`. (after `build`, before `test`)
+- **accessibility** — WCAG 2.2 AA: keyboard, screen reader, contrast, semantics.
+  Dispatches `accessibility-specialist`. (before `launch`)
+- **performance** — Core Web Vitals, bundle, caching, queries, latency.
+  Dispatches `performance-engineer`. (before `launch`, again in `operate`)
+- **onboarding** — engineer the shortest path to the aha moment. Dispatches
+  `ux-designer`, `copywriter`. (design/build, refined in `operate`)
+- **polish** — visual consistency, microcopy, every state handled. Dispatches
+  `ux-designer`, `copywriter`. (before `launch`, again in `operate`)
+- **research** — continuous customer discovery and JTBD. Dispatches
+  `ux-researcher`. Feeds `plan`. (continuous)
+- **experiment** — hypothesis-driven A/B and funnel tests. Dispatches
+  `data-analyst`. Feeds `build`. (in `operate`)
+
 ## The continuous loop
 
 Once you reach `operate`, you are live. From here you cycle:

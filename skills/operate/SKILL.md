@@ -40,9 +40,14 @@ signal for what to improve next.
    - **sell** — improve one funnel step.
    - **finance** — update the numbers.
    - **operate** — pick the single highest-leverage improvement; ship it.
-5. **New features re-enter the build loop:** `plan → design → build → test →
-   secure → deploy`. Don't skip validation for big bets.
-6. **Protect the founder.** Set boundaries and routines so the machine doesn't
+5. **Keep the discovery + data loop running.** Use `research` for continuous
+   customer discovery and `experiment` to turn analytics into tested
+   improvements. These feed the roadmap with evidence instead of guesses. Run a
+   `polish` pass on rough surfaces as you go.
+6. **New features re-enter the build loop:** `plan → design → prototype → build →
+   code-review → test → deploy`, with `accessibility` and `performance` passes
+   before they reach users. Don't skip validation for big bets.
+7. **Protect the founder.** Set boundaries and routines so the machine doesn't
    consume you. A burned-out founder is the top operational risk.
 
 ## Exit criteria

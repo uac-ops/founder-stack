@@ -11,6 +11,23 @@ work, and a manager to coordinate.
 | **Agents** | `agents/<name>.md` subagents | Specialists you dispatch for focused work |
 | **Commands** | `commands/<name>.md` | Human entry points (slash commands) |
 
+## Two kinds of skills
+
+- **Lifecycle skills** sit on the linear `Stage` machine (`ideate → … →
+  operate`, 14 stages). The orchestrator advances `Stage` through them in order.
+  Each owns one numbered ledger section (`## 01`–`## 16`).
+- **Cross-cutting skills** are *not* on the `Stage` machine — you run them when
+  they're relevant:
+  - `finance` and `legal` (business risk), and
+  - the 8 **quality skills** (`prototype`, `code-review`, `accessibility`,
+    `performance`, `onboarding`, `polish`, `research`, `experiment`).
+
+  The quality skills write to the `## Q · Quality & Discovery` block of the
+  ledger and are suggested by the lifecycle stages they support (e.g. `build`
+  suggests `code-review`; `launch` requires `accessibility`/`performance`/`polish`
+  in its pre-flight gate). This keeps the linear spine clean while letting product
+  quality be improved at any point.
+
 ## How a stage runs
 
 ```

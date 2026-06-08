@@ -23,7 +23,10 @@ A coordinated launch with assets ready, channels chosen, and results captured.
 
 ## Process
 1. **Pre-flight gate.** Confirm: product is live and stable, `legal` (ToS,
-   Privacy) is done, and analytics work. Don't launch onto a broken floor.
+   Privacy) is done, and analytics work. Also confirm the quality passes are done
+   — `accessibility`, `performance`, and `polish` — so the flood of launch
+   traffic meets a product that's usable, fast, and considered. Don't launch onto
+   a broken floor.
 2. **Pick channels** with `growth-marketer`, matched to where your customers are
    (from `## 02 Validation`):
    - **Product Hunt** — schedule, prepare gallery, first comment, hunter.
