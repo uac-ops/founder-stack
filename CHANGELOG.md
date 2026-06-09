@@ -8,6 +8,12 @@ All notable changes to Founder Stack are documented here. Format follows
 
 ## [0.1.2] — 2026-06-08
 
+### Fixed
+- Install instructions now use the correct `plugin-name@marketplace-name` syntax
+  (`/plugin install founder-stack@founder-stack`) in the README and
+  getting-started guide, plus update instructions. Verified against the current
+  Claude Code plugin-marketplace docs.
+
 ### Added
 - **8 quality skills** (cross-cutting, not on the linear Stage machine):
   `prototype`, `code-review`, `accessibility`, `performance`, `onboarding`,

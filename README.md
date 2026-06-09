@@ -26,17 +26,29 @@ A solo founder wears every hat: product, design, engineering, security, ops, mar
 
 ## Install
 
-Founder Stack is a standard Claude Code plugin.
+Founder Stack is a standard Claude Code plugin distributed straight from this
+GitHub repo. In Claude Code, run:
 
-```bash
+```text
 # 1. Add this repo as a plugin marketplace
 /plugin marketplace add uac-ops/founder-stack
 
-# 2. Install the plugin
-/plugin install founder-stack
+# 2. Install the plugin (syntax is plugin-name@marketplace-name)
+/plugin install founder-stack@founder-stack
 ```
 
-Or clone it and point Claude Code at the folder:
+That's it — the skills, agents, and commands are now available in your
+environment. Verify with `/plugin` (you should see founder-stack enabled) or just
+run `/new-company`.
+
+**Updating.** When a new version ships, pull the latest catalog and reinstall:
+
+```text
+/plugin marketplace update founder-stack
+/plugin install founder-stack@founder-stack
+```
+
+**Browse without installing.** Prefer to read first? Clone it:
 
 ```bash
 git clone https://github.com/uac-ops/founder-stack.git

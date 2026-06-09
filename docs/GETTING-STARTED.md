@@ -4,12 +4,14 @@ This guide takes you from zero to your first running stage in about five minutes
 
 ## 1. Install
 
-```bash
+```text
 /plugin marketplace add uac-ops/founder-stack
-/plugin install founder-stack
+/plugin install founder-stack@founder-stack
 ```
 
-Restart Claude Code if it doesn't pick up the plugin immediately.
+The install syntax is `plugin-name@marketplace-name` — both happen to be
+`founder-stack` here. Restart Claude Code if it doesn't pick up the plugin
+immediately, and run `/plugin` to confirm it's enabled.
 
 ## 2. Create your company
 
