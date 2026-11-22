@@ -9,7 +9,7 @@ Turn the plan and design into working software. Move fast, but leave a clean
 trail: tests, small commits, and an honest tech-debt log.
 
 ## Connected skills
-- Reads:    `## 03 Plan`, `## 04 Design`
+- Reads:    `## 03 Plan`, `## 04 Design` (plus `### Spec` and `### Data Model` when present)
 - Writes:   `## 05 Build`
 - Agents:   `architect`, `builder`
 - Previous: `design`
@@ -32,7 +32,8 @@ Check that `## 03 Plan`, `## 04 Design` are filled in COMPANY.md. If a section y
 2. **Slice the work.** Break the MVP into vertical slices — each a user-visible
    capability you can demo. Build the spine first (the critical flow).
 3. **Build slice by slice with `builder`.** For each slice:
-   - Write a failing test for the behavior (TDD where it pays).
+   - Write a failing test for the behavior (TDD where it pays), straight from the
+     slice's acceptance criteria in `### Spec`.
    - Implement until green.
    - Wire the UI to the design system.
    - **Run it.** Start the app and exercise the slice for real; capture the

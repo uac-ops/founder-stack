@@ -96,7 +96,7 @@ product into a *good* one. They write to the `## Q · Quality & Discovery` block
 of the ledger.
 
 ```
-design ─►[ prototype ]─► build ─►[ code-review ]─► test ─► ... ─► launch
+plan ─►[ spec ][ data-model ]─► design ─►[ prototype ]─► build ─►[ code-review ]─► test ─► ... ─► launch
                                                                     ▲
                        before launch: [ accessibility ][ performance ][ polish ]
 
@@ -104,6 +104,20 @@ design ─►[ prototype ]─► build ─►[ code-review ]─► test ─► .
            product surface: [ onboarding ] designs the path to first value
 ```
 
+- **spec** — turn each feature into testable acceptance criteria, edge cases,
+  and non-goals. Dispatches `product-strategist`, `architect`. (before `build`)
+- **data-model** — schema, API contract, migrations, deletion, backups.
+  Dispatches `architect`. (after `spec`, before `build`)
+- **debug** — reproduce, isolate, fix the root cause, add a regression test.
+  Dispatches `debugger`. (any time)
+- **instrument** — question-driven tracking plan, verified in production.
+  Dispatches `data-analyst`, `builder`. (after `deploy`, gates `launch`)
+- **incident** — severity, mitigate, communicate, fix, blameless postmortem.
+  Dispatches `devops-engineer`, `debugger`. (once live)
+- **retention** — cohorts, churn reasons, habit loop, win-back. Dispatches
+  `data-analyst`, `ux-researcher`. (in `operate`)
+- **ai-evals** — rubric, golden set, graders, CI regression checks, injection
+  defenses. Dispatches `ai-evaluator`. (after `build`, if the product uses AI)
 - **prototype** — test the riskiest design assumption with users before building.
   Dispatches `ux-designer`. (after `design`, before `build`)
 - **code-review** — review the diff for bugs, security, and simplification.
@@ -130,7 +144,7 @@ checks `## Meta → Gates` before running the next stage:
 |--------|------|
 | `test` | `code-review` — no open high-confidence correctness/security issues |
 | `deploy` | `secure` — no open high/critical findings |
-| `launch` | `legal`, `accessibility`, `performance`, `polish` |
+| `launch` | `legal`, `accessibility`, `performance`, `instrument`, `polish` |
 
 Overrides are allowed but must be logged in the Decision Log with a reason.
 

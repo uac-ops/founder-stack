@@ -9,6 +9,14 @@ All notable changes to Founder Stack are documented here. Format follows
 ## [0.2.0] — 2026-11-22
 
 ### Added
+- **7 new skills:** `spec` (testable acceptance criteria), `data-model`
+  (schema, API contract, data lifecycle), `debug` (root-cause method),
+  `instrument` (tracking plan, gates launch), `incident` (outage playbook +
+  postmortem), `retention` (cohorts and churn), `ai-evals` (golden sets and CI
+  regression checks for AI features).
+- **2 new agents:** `debugger`, `ai-evaluator`.
+- Ledger: five new Quality & Discovery sections, an `instrument` gate, and an
+  `Incident log` under Operations.
 - **Quality gates.** The orchestrator now blocks `test` until `code-review`
   passes, `deploy` until `secure` passes, and `launch` until `legal`,
   `accessibility`, `performance`, and `polish` pass. Overrides must be logged.

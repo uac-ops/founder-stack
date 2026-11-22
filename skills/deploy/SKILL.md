@@ -33,7 +33,7 @@ Check that `## 03 Plan`, `## 05 Build`, `## 07 Security` are filled in COMPANY.m
 3. **CI/CD.** On push to main: run tests, build, deploy. Block deploys on red
    tests. Keep it simple and fast.
 4. **Health checks + analytics.** A health endpoint and an uptime check so you
-   know within minutes if prod is down. Also wire up **product analytics** now
+   know within minutes if prod is down. Also wire up **product analytics** now (run `instrument` for the tracking plan)
    (a privacy-respecting tool is fine) and confirm events fire — `launch`,
    `market`, and `operate` all depend on this data existing, so it must be live
    before you go public. Add error tracking too.

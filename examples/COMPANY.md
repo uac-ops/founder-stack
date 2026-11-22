@@ -23,6 +23,7 @@
   - [x] legal (before launch)
   - [x] accessibility (before launch)
   - [x] performance (before launch)
+  - [x] instrument (before launch)
   - [x] polish (before launch)
 
 ---
@@ -165,6 +166,11 @@
 
 ## Q · Quality & Discovery
 
+### Spec            <!-- skill: spec -->
+### Data Model      <!-- skill: data-model -->
+### Instrumentation <!-- skill: instrument -->
+### Retention       <!-- skill: retention -->
+### AI Evals        <!-- skill: ai-evals -->
 ### Research        <!-- skill: research -->
 Monthly: 4 user interviews. Latest finding — users distrust the draft until they
 see it match their *voice*, so we added a one-time tone calibration. JTBD: "make

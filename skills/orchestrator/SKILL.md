@@ -70,6 +70,7 @@ the founder which gate is open, and run the gate skill first.
 | `launch` | Legal: ToS + Privacy live | `legal` |
 | `launch` | Accessibility: no AA blockers on critical flows | `accessibility` |
 | `launch` | Performance: LCP < 2.5s, INP < 200ms, CLS < 0.1 on key pages | `performance` |
+| `launch` | Instrumentation: tracking plan events verified in production | `instrument` |
 | `launch` | Polish: loading/empty/error states handled on critical flows | `polish` |
 
 A gate passes only when its skill has recorded evidence in the ledger and ticked
@@ -87,12 +88,17 @@ Patching around a root cause in a later stage is not allowed.
 ## Quality & Discovery skills
 These are not linear stages either — they make the product *better*. Suggest them
 at the natural moment:
-- After `design`, before `build`: `prototype` (test the design), `onboarding`
-  (design the aha moment).
+- After `plan`/`design`, before `build`: `spec` (testable acceptance criteria),
+  `data-model` (schema + API contract), `prototype` (test the design),
+  `onboarding` (design the aha moment).
+- After `build` if the product has AI features: `ai-evals`.
+- After `deploy`, before `launch`: `instrument` (tracking plan, gated).
+- Any time something breaks: `debug`. Production down or data at risk: `incident`
+  — this preempts whatever stage is running.
 - After `build`, before `test`: `code-review` (catch defects in the diff).
 - Before `launch`: `accessibility`, `performance`, and `polish` passes.
-- During `operate`: `research` (continuous discovery) and `experiment` (act on
-  analytics), plus `polish` on rough surfaces.
+- During `operate`: `research` (continuous discovery), `retention` (cohorts and
+  churn), and `experiment` (act on analytics), plus `polish` on rough surfaces.
 They write to the `## Q · Quality & Discovery` block in the ledger. A founder can
 run any of them on demand at any time.
 
