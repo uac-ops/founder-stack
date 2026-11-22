@@ -55,6 +55,7 @@ signal for what to improve next.
 - A one-screen dashboard.
 - At least the core routines automated.
 - A weekly operating cadence in place.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 16 Operations` (north-star metric, dashboards, recurring routines,

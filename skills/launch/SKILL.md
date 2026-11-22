@@ -21,6 +21,9 @@ A coordinated launch with assets ready, channels chosen, and results captured.
 ## Inputs
 - The one-liner, design assets, live URL, and (required) finished `legal`.
 
+## Before you start
+Check that `## 01 Idea`, `## 04 Design`, `## 09 Docs`, `## 15 Legal` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Pre-flight gate.** Confirm: product is live and stable, `legal` (ToS,
    Privacy) is done, and analytics work. Also confirm the quality passes are done
@@ -47,6 +50,7 @@ A coordinated launch with assets ready, channels chosen, and results captured.
 - All assets ready and channels scheduled.
 - Launch executed with you present to engage.
 - Results and feedback captured.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 10 Launch` (channels, assets, date, results).

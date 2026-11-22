@@ -22,6 +22,9 @@ product improvements — without eating your whole week.
 ## Inputs
 - Docs (`## 09`) to deflect common questions; customers (`## 12 Sales`).
 
+## Before you start
+Check that `## 09 Docs`, `## 12 Sales` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Pick channels you can sustain.** One or two: email, a help widget, or a
    community. Set expectations (response time) you can actually meet solo.
@@ -40,6 +43,7 @@ product improvements — without eating your whole week.
 - Support channel(s) live with stated response times.
 - FAQ + canned replies in place.
 - A weekly triage habit that feeds the plan.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 13 Support` (channels, FAQ/canned replies, top issues).

@@ -22,6 +22,9 @@ line of production code.
 ## Inputs
 - The critical flow and design system from `## 04 Design`.
 
+## Before you start
+Check that `## 03 Plan`, `## 04 Design` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Pick the riskiest design question.** What, if wrong, wastes the most build
    time? (e.g. "do users understand the core action without explanation?")
@@ -38,6 +41,7 @@ line of production code.
 ## Exit criteria
 - The riskiest design question is answered with user evidence.
 - A go-to-build or revise decision, with what changed.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `### Prototype` (question, fidelity, what users did, decision).

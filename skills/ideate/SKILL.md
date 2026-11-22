@@ -22,6 +22,9 @@ now, and the one assumption that most needs to be true.
 ## Inputs
 - The founder's raw idea (ask for it if `## 01 Idea` is empty).
 
+## Before you start
+Check that `## Meta` is filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Capture the raw idea** in the founder's own words.
 2. **Interrogate the problem, not the solution.** Ask, one at a time:
@@ -39,6 +42,7 @@ now, and the one assumption that most needs to be true.
 - A clear problem statement and named target customer.
 - A one-liner you'd say out loud to a stranger.
 - A single, testable riskiest assumption.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 01 Idea` (problem, target customer, solution, why now, riskiest

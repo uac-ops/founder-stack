@@ -17,6 +17,13 @@
 - **Last updated:** 2026-05-30
 - **Production URL:** https://shipdigest.app
 - **Repo:** https://github.com/alexr/shipdigest
+- **Gates:** <!-- ticked by the gate skill, with evidence in its section; checked by the orchestrator -->
+  - [x] code-review (before test)
+  - [x] secure (before deploy)
+  - [x] legal (before launch)
+  - [x] accessibility (before launch)
+  - [x] performance (before launch)
+  - [x] polish (before launch)
 
 ---
 

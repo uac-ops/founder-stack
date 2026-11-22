@@ -22,6 +22,9 @@ can ship solo.
 ## Inputs
 - Validated problem and demand evidence from `## 02 Validation`.
 
+## Before you start
+Check that `## 01 Idea`, `## 02 Validation` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Define the core job.** The one thing the product must do for a user to get
    value. Everything else is negotiable.
@@ -44,6 +47,7 @@ can ship solo.
 - Explicit in/out scope.
 - Chosen stack with rationale.
 - Milestones with a "done" line.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 03 Plan`.

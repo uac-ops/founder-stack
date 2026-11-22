@@ -22,6 +22,9 @@ right visitors.
 ## Inputs
 - Where customers hang out (`## 02 Validation`), launch learnings (`## 10`).
 
+## Before you start
+Check that `## 01 Idea`, `## 02 Validation`, `## 10 Launch` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Lock positioning.** With `growth-marketer`, write the message house: who
    it's for, the problem, the promise, why you over alternatives. One sentence
@@ -45,6 +48,7 @@ right visitors.
 - Positioning/message house written and applied.
 - One primary channel chosen with a content calendar.
 - SEO basics in place; funnel-top metrics tracked.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 11 Marketing` (positioning, channels, content calendar, SEO/keywords).

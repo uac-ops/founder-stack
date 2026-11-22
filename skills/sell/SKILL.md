@@ -22,6 +22,9 @@ A clear price and packaging, a working funnel, and a repeatable way to close.
 - Pricing signal (`## 02 Validation`), traffic (`## 11 Marketing`), unit
   economics (`## 14 Finance`).
 
+## Before you start
+Check that `## 02 Validation`, `## 11 Marketing`, `## 14 Finance` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Price on value, not cost.** With `sales-closer` + `finance-clerk`, anchor to
    the value delivered and the pricing signal from validation. Pick a model
@@ -43,6 +46,7 @@ A clear price and packaging, a working funnel, and a repeatable way to close.
 - Pricing and packaging live.
 - A funnel that takes a visitor to payment.
 - Conversion tracked; a first paying customer (or a concrete plan to get one).
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 12 Sales` (pricing & packaging, funnel, outreach list, conversion notes).

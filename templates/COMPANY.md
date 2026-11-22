@@ -26,6 +26,13 @@
 - **Last updated:** _YYYY-MM-DD_
 - **Production URL:** _TBD_
 - **Repo:** _TBD_
+- **Gates:** <!-- ticked by the gate skill, with evidence in its section; checked by the orchestrator -->
+  - [ ] code-review (before test)
+  - [ ] secure (before deploy)
+  - [ ] legal (before launch)
+  - [ ] accessibility (before launch)
+  - [ ] performance (before launch)
+  - [ ] polish (before launch)
 
 ---
 

@@ -21,6 +21,9 @@ A live production URL, a one-command (or auto) deploy, and a tested rollback.
 ## Inputs
 - Stack and hosting choice from `## 03 Plan` / `## 05 Build`.
 
+## Before you start
+Check that `## 03 Plan`, `## 05 Build`, `## 07 Security` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Pick hosting that fits a solo founder.** With `devops-engineer`, favor
    managed platforms (Vercel/Netlify/Fly/Render) over hand-rolled infra. Less to
@@ -45,6 +48,7 @@ A live production URL, a one-command (or auto) deploy, and a tested rollback.
 - Automated deploy on push; red tests block it.
 - Health check live; rollback tested.
 - Product analytics + error tracking live and verified.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 08 Deploy` (hosting/infra, CI/CD, environments, rollback plan).

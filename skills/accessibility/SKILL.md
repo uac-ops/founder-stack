@@ -22,6 +22,9 @@ pass an automated + manual a11y check.
 ## Inputs
 - The design system (`## 04 Design`) and the built UI (`## 05 Build`).
 
+## Before you start
+Check that `## 04 Design`, `## 05 Build` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Automated first pass.** Run an a11y linter/scanner (axe, Lighthouse) on key
    pages. Fix the easy wins (missing labels, contrast, alt text).
@@ -41,7 +44,10 @@ pass an automated + manual a11y check.
 ## Exit criteria
 - Critical flows operable by keyboard and screen reader.
 - Contrast and semantics pass.
-- No blocking a11y issues on core paths.
+- No blocking a11y issues on core paths; automated scan shows 0 serious/critical
+  violations and all text meets 4.5:1 contrast (3:1 for large text and UI).
+- Tick `## Meta → Gates → accessibility`.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `### Accessibility` (audit results, fixes, remaining items).

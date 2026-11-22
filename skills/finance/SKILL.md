@@ -21,6 +21,9 @@ A simple, current picture of money in, money out, and how long you can last.
 ## Inputs
 - Pricing signal (`## 02`), revenue (`## 12 Sales`), your costs.
 
+## Before you start
+Check that `## 02 Validation`, `## 12 Sales` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Unit economics first.** With `finance-clerk`: what does it cost to serve one
    customer, what do they pay, what's the gross margin? If a sale loses money,
@@ -40,6 +43,7 @@ A simple, current picture of money in, money out, and how long you can last.
 - Known runway in months.
 - Positive (or path to positive) unit economics.
 - A living revenue/cost sheet.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 14 Finance` (runway/burn, MRR, costs, pricing economics).

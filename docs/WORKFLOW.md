@@ -121,6 +121,30 @@ design ─►[ prototype ]─► build ─►[ code-review ]─► test ─► .
 - **experiment** — hypothesis-driven A/B and funnel tests. Dispatches
   `data-analyst`. Feeds `build`. (in `operate`)
 
+## Quality gates
+
+Some transitions are **blocked** until a quality skill passes. The orchestrator
+checks `## Meta → Gates` before running the next stage:
+
+| Before | Gate |
+|--------|------|
+| `test` | `code-review` — no open high-confidence correctness/security issues |
+| `deploy` | `secure` — no open high/critical findings |
+| `launch` | `legal`, `accessibility`, `performance`, `polish` |
+
+Overrides are allowed but must be logged in the Decision Log with a reason.
+
+## Ground rules every skill follows
+
+- **Check before you start.** A skill first checks that the ledger sections it
+  reads are filled in, and sends you to the skill that fills them if not.
+- **Show evidence.** Exit criteria are met only with evidence (test output,
+  screenshots, measurements, links), not just a claim.
+- **Rewind, don't patch.** If a later stage finds a root cause that belongs to
+  an earlier one, `Stage` moves back to that stage and the rewind is logged.
+- **Fixed scoring.** `test` uses a fixed 0–100 health score (ship at ≥ 85, zero
+  blockers); accessibility, performance, and secure have concrete thresholds.
+
 ## The continuous loop
 
 Once you reach `operate`, you are live. From here you cycle:

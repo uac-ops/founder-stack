@@ -22,6 +22,9 @@ you keep.
 ## Inputs
 - Funnel and usage data (analytics), the metric you want to move.
 
+## Before you start
+Check that `## 16 Operations`, `## 11 Marketing`, `## 12 Sales` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Find the biggest lever.** With `data-analyst`, look at the funnel for the
    largest drop-off or the metric furthest from goal. Fix the bottleneck, not a
@@ -41,6 +44,7 @@ you keep.
 - A clear hypothesis tied to one metric.
 - A run with a pre-committed stopping rule.
 - A ship/kill decision and a recorded learning.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `### Experiments` (hypothesis, metric, result, decision, learning).

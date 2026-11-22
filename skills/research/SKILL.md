@@ -22,6 +22,9 @@ roadmap decisions.
 ## Inputs
 - Open questions about users; support themes (`## 13 Support`); analytics.
 
+## Before you start
+Check that `## 01 Idea`, `## 02 Validation`, `## 13 Support` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Pick one question.** Discovery is sharpest when aimed. e.g. "why do trial
    users not invite teammates?"
@@ -39,6 +42,7 @@ roadmap decisions.
 ## Exit criteria
 - A clear answer (or sharper question) backed by real user input.
 - Insights synthesized into roadmap candidates.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `### Research` (question, who, key findings, JTBD, actions).

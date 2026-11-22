@@ -22,6 +22,9 @@ the MVP, captured so the `build` stage can implement without guessing.
 ## Inputs
 - The MVP scope from `## 03 Plan`; the positioning from `## 01 Idea`.
 
+## Before you start
+Check that `## 01 Idea`, `## 03 Plan` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Positioning into personality.** Translate the one-liner into 3 brand
    adjectives (e.g. "calm, precise, trustworthy"). These drive every choice.
@@ -43,6 +46,7 @@ the MVP, captured so the `build` stage can implement without guessing.
 - A documented design system.
 - The critical flow mapped end to end.
 - Key screens defined (incl. empty/error states).
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 04 Design` (brand, system summary, key flows, link to mockups/DESIGN.md).

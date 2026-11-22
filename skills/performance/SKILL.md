@@ -22,6 +22,9 @@ measurements to prove it.
 ## Inputs
 - The live or staging build and its key pages.
 
+## Before you start
+Check that `## 05 Build`, `## 08 Deploy` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Measure first — never guess.** With `performance-engineer`, capture a
    baseline:
@@ -39,9 +42,12 @@ measurements to prove it.
    (e.g. LCP < 2.5s) so it doesn't regress.
 
 ## Exit criteria
-- Core Web Vitals in the "good" range on key pages.
+- Core Web Vitals in the "good" range on key pages (LCP < 2.5s, INP < 200ms,
+  CLS < 0.1, measured on a throttled mid-tier mobile profile).
 - Key endpoints within their latency budget.
 - A before/after measurement recorded.
+- Tick `## Meta → Gates → performance`.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `### Performance` (baseline, fixes, after numbers, budget).
