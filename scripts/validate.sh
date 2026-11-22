@@ -51,6 +51,27 @@ for f in commands/*.md; do
   [ -n "$desc" ] && ok "$f"
 done
 
+echo "== structure & cross-references =="
+for f in skills/*/SKILL.md; do
+  for sec in "## Connected skills" "## Goal" "## Process" "## Exit criteria" "## Update the ledger" "## Handoff"; do
+    case "$f" in skills/orchestrator/*) [ "$sec" = "## Process" ] || [ "$sec" = "## Goal" ] || continue ;; esac
+    grep -qF "$sec" "$f" || err "$f: missing section '$sec'"
+  done
+  agents_line="$(grep -m1 -- '- Agents:' "$f" || true)"
+  for a in $(printf '%s' "$agents_line" | grep -o '`[a-z-]*`' | tr -d '`'); do
+    [ -f "agents/$a.md" ] || err "$f: references missing agent '$a'"
+  done
+done
+# every skill named in the orchestrator stage table must exist
+for s in $(sed -n 's/^ *| [a-z-]* | `\([a-z-]*\)` |.*/\1/p' skills/orchestrator/SKILL.md); do
+  [ -f "skills/$s/SKILL.md" ] || err "orchestrator stage table references missing skill '$s'"
+done
+# every gate in the template must have a skill
+for g in $(sed -n 's/^  - \[ \] \([a-z-]*\) (.*/\1/p' templates/COMPANY.md); do
+  [ -f "skills/$g/SKILL.md" ] || err "templates/COMPANY.md gate '$g' has no skill"
+done
+[ "$fail" -eq 0 ] && ok "sections, agent refs, stage table, and gates resolve"
+
 echo "== json =="
 PY=""
 for cand in python3 python; do

@@ -22,6 +22,9 @@ accidental.
 ## Inputs
 - The design system (`## 04 Design`) and the live UI.
 
+## Before you start
+Check that `## 04 Design`, `## 05 Build` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Consistency sweep** with `ux-designer`. Walk every key screen and check
    against the design system:
@@ -43,8 +46,10 @@ accidental.
 - Visual consistency across key screens.
 - Every state designed and handled.
 - Microcopy clear; interactions feel responsive.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
+- Tick `## Meta → Gates → polish` once exit criteria are met.
 - Fill `### Polish` (what was tightened, states added, copy fixes).
 - Decision Log: `YYYY-MM-DD · polish pass · states + consistency done`.
 - Next Actions: continue toward `launch`; re-polish new surfaces in `operate`.

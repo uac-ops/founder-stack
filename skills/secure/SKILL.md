@@ -21,6 +21,9 @@ A short threat model, fixed high-severity findings, and clean secrets hygiene.
 ## Inputs
 - Architecture and stack from `## 05 Build`.
 
+## Before you start
+Check that `## 05 Build`, `## 08 Deploy` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Threat model (lightweight STRIDE).** With `security-auditor`, ask for each
    entry point: what can be spoofed, tampered, leaked, denied, or escalated?
@@ -41,7 +44,10 @@ A short threat model, fixed high-severity findings, and clean secrets hygiene.
 ## Exit criteria
 - Threat model documented.
 - No open high/critical findings.
-- Secrets out of the repo and managed properly.
+- Secrets out of the repo and managed properly (a secret scan of the full git
+  history is clean).
+- Tick `## Meta → Gates → secure`.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 07 Security` (threat model summary, findings + status, secrets mgmt).

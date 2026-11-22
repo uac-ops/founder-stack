@@ -6,6 +6,37 @@ All notable changes to Founder Stack are documented here. Format follows
 
 ## [Unreleased]
 
+## [0.2.0] — 2026-11-22
+
+### Added
+- **7 new skills:** `spec` (testable acceptance criteria), `data-model`
+  (schema, API contract, data lifecycle), `debug` (root-cause method),
+  `instrument` (tracking plan, gates launch), `incident` (outage playbook +
+  postmortem), `retention` (cohorts and churn), `ai-evals` (golden sets and CI
+  regression checks for AI features).
+- **2 new agents:** `debugger`, `ai-evaluator`.
+- Ledger: five new Quality & Discovery sections, an `instrument` gate, and an
+  `Incident log` under Operations.
+- **Quality gates.** The orchestrator now blocks `test` until `code-review`
+  passes, `deploy` until `secure` passes, and `launch` until `legal`,
+  `accessibility`, `performance`, and `polish` pass. Overrides must be logged.
+- `Gates` checklist in `## Meta` of the `COMPANY.md` template and worked example.
+- **Rewind rule:** later stages send `Stage` back to the stage that owns a root
+  cause instead of patching around it.
+- **Before you start** check in every skill: verifies the ledger sections it
+  reads are filled in before acting.
+- Fixed 0–100 **health score rubric** in `test` (ship at ≥ 85, zero blockers).
+- `validate.sh` now checks required skill sections, agent references, the
+  orchestrator stage table, and template gates.
+
+### Changed
+- Every skill's exit criteria now require evidence, not just a claim.
+- `build` requires running each slice and capturing evidence before committing.
+- Concrete pass thresholds for `accessibility` (0 serious/critical, AA
+  contrast), `performance` (LCP < 2.5s, INP < 200ms, CLS < 0.1), and `secure`
+  (clean secret scan across git history).
+- `docs/WORKFLOW.md` documents gates and the shared ground rules.
+
 ## [0.1.2] — 2026-06-08
 
 ### Fixed

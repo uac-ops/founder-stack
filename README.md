@@ -17,8 +17,8 @@ Every part is connected through one shared file — `COMPANY.md`, your company l
 
 A solo founder wears every hat: product, design, engineering, security, ops, marketing, sales, support, finance, legal. Most tools cover one slice. Founder Stack covers the whole company and — critically — **wires the slices together** so nothing falls through the cracks.
 
-- **25 skills** — the 14-stage lifecycle (`ideate` → `operate`), 8 cross-cutting quality skills (prototype, code-review, accessibility, performance, onboarding, polish, research, experiment), plus the orchestrator.
-- **20 specialist agents** — a researcher, architect, builder, reviewer, designer, closer, and more, each dispatchable for focused work.
+- **32 skills** — the 14-stage lifecycle (`ideate` → `operate`), 15 cross-cutting quality skills (spec, data-model, prototype, code-review, debug, ai-evals, accessibility, performance, instrument, onboarding, polish, incident, retention, research, experiment), plus the orchestrator.
+- **22 specialist agents** — a researcher, architect, builder, reviewer, designer, closer, and more, each dispatchable for focused work.
 - **4 orchestration commands** — `/new-company`, `/company`, `/next`, `/status`.
 - **1 shared ledger** — `COMPANY.md` keeps every stage in sync.
 
@@ -144,7 +144,7 @@ ledger.
                              │ read / write
         ┌────────────────────┼────────────────────┐
         ▼                    ▼                     ▼
-   /company            25 skills             20 agents
+   /company            32 skills             22 agents
   (orchestrator)   ideate → operate     researcher, architect,
    reads Stage,    each reads inputs,    builder, closer, ...
    runs next       writes outputs,       dispatched by skills
@@ -163,8 +163,8 @@ founder-stack/
 ├── .claude-plugin/      plugin + marketplace manifests
 ├── .github/             issue/PR templates + CI workflow
 ├── commands/            slash-command entry points
-├── skills/              25 skills: 14-stage lifecycle + 8 quality + orchestrator
-├── agents/              20 specialist subagents
+├── skills/              32 skills: 14-stage lifecycle + 15 quality + orchestrator
+├── agents/              22 specialist subagents
 ├── templates/           COMPANY.md ledger + artifact templates
 ├── examples/            a fully worked COMPANY.md
 ├── scripts/             validate.sh (structure + frontmatter check)

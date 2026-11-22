@@ -22,6 +22,9 @@ success fast, and a changelog you'll keep.
 ## Inputs
 - The one-liner, what you built, and the live URL from the ledger.
 
+## Before you start
+Check that `## 01 Idea`, `## 03 Plan`, `## 05 Build`, `## 08 Deploy` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **README that sells.** With `technical-writer`, lead with the one-liner, the
    problem it solves, a screenshot/GIF, and a 60-second quick start. Make value
@@ -43,6 +46,7 @@ success fast, and a changelog you'll keep.
 - README that sells and orients.
 - A getting-started path that reliably reaches first success.
 - A changelog started.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 09 Docs` (README status, user docs, changelog).

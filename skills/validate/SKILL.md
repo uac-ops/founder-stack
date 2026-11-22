@@ -21,6 +21,9 @@ A clear go / pivot / kill decision backed by evidence, not hope.
 ## Inputs
 - The riskiest assumption and target customer from `## 01 Idea`.
 
+## Before you start
+Check that `## 01 Idea` is filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **State the test.** Turn the riskiest assumption into a falsifiable question.
    e.g. "Will at least 5 of 10 target users say they'd pay $X for this?"
@@ -45,6 +48,7 @@ A clear go / pivot / kill decision backed by evidence, not hope.
 - Documented demand evidence and competitor/status-quo map.
 - A pricing signal.
 - An explicit go / pivot / kill decision.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 02 Validation`.

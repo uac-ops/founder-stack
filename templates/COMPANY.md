@@ -26,6 +26,14 @@
 - **Last updated:** _YYYY-MM-DD_
 - **Production URL:** _TBD_
 - **Repo:** _TBD_
+- **Gates:** <!-- ticked by the gate skill, with evidence in its section; checked by the orchestrator -->
+  - [ ] code-review (before test)
+  - [ ] secure (before deploy)
+  - [ ] legal (before launch)
+  - [ ] accessibility (before launch)
+  - [ ] performance (before launch)
+  - [ ] instrument (before launch)
+  - [ ] polish (before launch)
 
 ---
 
@@ -121,12 +129,18 @@
 - **Dashboards:**
 - **Recurring routines:**
 - **Automations:**
+- **Incident log:** <!-- skill: incident · date · SEV · duration · cause · actions -->
 
 ---
 
 ## Q · Quality & Discovery
 <!-- Cross-cutting quality skills. Run when relevant, not at a fixed step. -->
 
+### Spec            <!-- skill: spec -->
+### Data Model      <!-- skill: data-model -->
+### Instrumentation <!-- skill: instrument -->
+### Retention       <!-- skill: retention -->
+### AI Evals        <!-- skill: ai-evals -->
 ### Research        <!-- skill: research -->
 ### Prototype       <!-- skill: prototype -->
 ### Code Review     <!-- skill: code-review -->

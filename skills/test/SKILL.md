@@ -22,6 +22,9 @@ ship / don't ship.
 ## Inputs
 - The MVP definition and feature status from `## 03 Plan` / `## 05 Build`.
 
+## Before you start
+Check that `## 03 Plan`, `## 05 Build` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **List the critical flows.** The handful of paths where failure loses a user
    or money (signup, the core action, payment).
@@ -34,14 +37,27 @@ ship / don't ship.
 3. **Measure.** Capture test coverage on critical paths (not vanity 100%) and a
    simple health score: tests passing, lint clean, no console errors, key flows
    work.
+   **Health score (0–100), always computed the same way:**
+   | Check | Points |
+   |-------|--------|
+   | Critical-flow E2E tests pass | 30 |
+   | Unit/integration suite green | 20 |
+   | Manual walk of every critical flow passes (desktop + mobile) | 20 |
+   | No open blocker/high bugs | 15 |
+   | Lint + type check clean | 10 |
+   | No console/server errors during the walk | 5 |
+   Ship threshold: **≥ 85 and zero blockers.** Record the per-check breakdown,
+   not just the total, so scores are comparable run to run.
 4. **Triage bugs.** Severity-rank them. Fix blockers now; log the rest with
    repro steps.
 5. **Re-run after fixes.** Verify, don't assume. Evidence before claims.
 
 ## Exit criteria
 - Critical flows pass automated + manual checks.
-- Health score recorded; no open blockers.
+- Health score ≥ 85 with breakdown recorded; no open blockers.
+- If a blocker's root cause is in design or plan, rewind `Stage` (see orchestrator) instead of patching.
 - Remaining bugs logged with severity and repro.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `## 06 Test` (strategy, coverage/health score, known bugs).

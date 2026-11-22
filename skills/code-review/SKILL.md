@@ -22,6 +22,9 @@ so `test` starts from clean code.
 ## Inputs
 - The diff for the change (e.g. `git diff` against the base branch).
 
+## Before you start
+Check that `## 05 Build` is filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Get the diff.** Scope the review to what changed, not the whole codebase.
 2. **Review with `code-reviewer`,** in priority order:
@@ -42,6 +45,8 @@ so `test` starts from clean code.
 ## Exit criteria
 - No open high-confidence correctness or security issues.
 - Concerns that remain are logged with rationale.
+- Tick `## Meta → Gates → code-review`. Untick it if new code lands before `test`.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
 - Fill `### Code Review` (what was reviewed, issues found + status).

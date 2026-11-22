@@ -24,6 +24,9 @@ an honest privacy policy, clear IP, and the compliance basics for your users.
 ## Inputs
 - What data you collect (`## 05 Build` / `## 08 Deploy`), where customers are.
 
+## Before you start
+Check that `## 01 Idea`, `## 08 Deploy`, `## 14 Finance` are filled in COMPANY.md. If a section you depend on is empty or still `_TBD_`, stop and tell the founder which skill fills it (see the orchestrator's stage table) instead of guessing.
+
 ## Process
 1. **Business entity.** With `legal-advisor`, decide whether to incorporate now
    (liability, taxes, taking payment). Sole proprietor vs. LLC/Ltd depends on
@@ -47,8 +50,10 @@ an honest privacy policy, clear IP, and the compliance basics for your users.
 - Entity decision made.
 - ToS + Privacy published and linked in the footer.
 - Compliance basics handled for your audience.
+- Evidence shown for each criterion above (command output, screenshot, link, or measurement), not just asserted.
 
 ## Update the ledger
+- Tick `## Meta → Gates → legal` once exit criteria are met.
 - Fill `## 15 Legal` (entity, ToS/Privacy status, licenses/IP, compliance).
 - Decision Log: `YYYY-MM-DD · legal floor set · entity = <X> · ToS/Privacy live`.
 - Next Actions: return to `launch` (or your previous stage).
